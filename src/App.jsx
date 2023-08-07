@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { messaging } from "./firebase/firebase";
+import { getToken } from "firebase/messaging";
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const obtenToken = () => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .getRegistration()
+        .then((serviceWorkerRegistration) => {
+          getToken(messaging, { serviceWorkerRegistration })
+            .then(console.log)
+            .catch(console.error);
+        });
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <h1>My App</h1>
+      <button onClick={obtenToken}>Get Token</button>
+      {/* <button onClick={() => messaging.subscribeToTopic("news")}>
+        Subscribe to News Topic
+      </button>
+      <button onClick={() => messaging.unsubscribeFromTopic("news")}>
+        Unsubscribe from News Topic
+      </button> */}
+    </div>
+  );
+};
 
-export default App
+export default App;
