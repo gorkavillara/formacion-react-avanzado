@@ -1,23 +1,23 @@
-import { onBackgroundMessage, getMessaging } from "firebase/messaging/sw";
+// import { onBackgroundMessage, getMessaging } from "firebase/messaging/sw";
 
-const messaging = getMessaging();
+// const messaging = getMessaging();
 
-onBackgroundMessage(messaging, (payload) => {
-  console.log(
-    "Recibido mensaje en background ",
-    payload
-  );
-  // // Customize notification here
-  // const notificationTitle = "Background Message Title";
-  // const notificationOptions = {
-  //   body: "Background Message body.",
-  //   icon: "/firebase-logo.png",
-  // };
+// onBackgroundMessage(messaging, (payload) => {
+//   console.log(
+//     "Recibido mensaje en background ",
+//     payload
+//   );
+//   // // Customize notification here
+//   // const notificationTitle = "Background Message Title";
+//   // const notificationOptions = {
+//   //   body: "Background Message body.",
+//   //   icon: "/firebase-logo.png",
+//   // };
 
-  // self.registration.showNotification(notificationTitle, notificationOptions);
-});
+//   // self.registration.showNotification(notificationTitle, notificationOptions);
+// });
 
-// self.addEventListener("fetch", e => console.log(e))
+self.addEventListener("fetch", e => console.log(e))
 
 // const event: keyof ServiceWorkerContainerEventMap = "message"
 

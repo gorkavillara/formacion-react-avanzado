@@ -10,6 +10,9 @@ export default defineConfig({
       strategies: "injectManifest",
       srcDir: "src",
       filename: "service-worker.js",
+      injectManifest: {
+        injectionPoint: undefined
+      },
       manifest: {
         icons: [
           {

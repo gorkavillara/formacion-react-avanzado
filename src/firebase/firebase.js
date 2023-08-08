@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getMessaging } from "firebase/messaging";
+import { getMessaging, getToken } from "firebase/messaging";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDsfKoV7TtsVTK9KKvO7KuF3RbP5B54PtE",
@@ -10,19 +10,28 @@ const firebaseConfig = {
   appId: "1:1011386254365:web:217330c56750a7f3d732f4",
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+function requestPermission() {
+  console.log("Requesting permission...");
+  Notification.requestPermission().then((permission) => {
+    if (permission === "granted") {
+      console.log("Notification permission granted.");
+      const app = initializeApp(firebaseConfig);
 
-export const messaging = getMessaging(app);
+      const messaging = getMessaging(app);
+      getToken(messaging, {
+        vapidKey:
+          "BF6n7pDMoVrpO0d45bgYr9kZPaSt8OwE9evchUqsAJKgiEWroqFkbIwUeNJb7llfNFLuHWeBjCgt5C3AHQwB-Ro",
+      }).then((currentToken) => {
+        if (currentToken) {
+          console.log("currentToken: ", currentToken);
+        } else {
+          console.log("Can not get token");
+        }
+      });
+    } else {
+      console.log("Do not have permission!");
+    }
+  });
+}
 
-// const vapidKey =
-//   "BF6n7pDMoVrpO0d45bgYr9kZPaSt8OwE9evchUqsAJKgiEWroqFkbIwUeNJb7llfNFLuHWeBjCgt5C3AHQwB-Ro";
-
-// getToken(messaging, {
-//   vapidKey,
-//   serviceWorkerRegistration: "service-worker.js",
-// })
-//   .then(console.log)
-//   .catch(console.error);
-
-export default app;
+requestPermission();

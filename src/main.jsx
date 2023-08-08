@@ -9,21 +9,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </React.StrictMode>
 );
-
-// function requestPermission() {
-//   console.log("Requesting permission...");
-//   Notification.requestPermission().then((permission) => {
-//     if (permission === "granted") {
-//       new Notification("Título", {
-//         body: "Esto es el cuerpo de la notificaión"
-//       })
-//       console.log("Notification permission granted.");
-//     }
-//   });
-// }
-
-// requestPermission();
-
-// if ("navigator" in window) {
-//   navigator.serviceWorker.register("service-worker.js")
-// }
