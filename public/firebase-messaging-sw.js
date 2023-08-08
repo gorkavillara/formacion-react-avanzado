@@ -1,17 +1,17 @@
 // Scripts for firebase and firebase messaging
 // eslint-disable-next-line no-undef
-importScripts("https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js");
+importScripts("https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js");
 // eslint-disable-next-line no-undef
-importScripts("https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js");
+importScripts("https://www.gstatic.com/firebasejs/8.2.0/firebase-messaging.js");
 
 // Initialize the Firebase app in the service worker by passing the generated config
 const firebaseConfig = {
-    apiKey: "AIzaSyDsfKoV7TtsVTK9KKvO7KuF3RbP5B54PtE",
-    authDomain: "fir-api-a3355.firebaseapp.com",
-    projectId: "fir-api-a3355",
-    storageBucket: "fir-api-a3355.appspot.com",
-    messagingSenderId: "1011386254365",
-    appId: "1:1011386254365:web:217330c56750a7f3d732f4",
+  apiKey: "AIzaSyAttg-YqQmIYsDQDbgGUCTLzwGbc5kVqPQ",
+  authDomain: "firenotifications-8e73f.firebaseapp.com",
+  projectId: "firenotifications-8e73f",
+  storageBucket: "firenotifications-8e73f.appspot.com",
+  messagingSenderId: "493872124595",
+  appId: "1:493872124595:web:a1933d80f8ae7bd29f96c6",
 };
 
 // eslint-disable-next-line no-undef

@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getMessaging, getToken } from "firebase/messaging";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDsfKoV7TtsVTK9KKvO7KuF3RbP5B54PtE",
-  authDomain: "fir-api-a3355.firebaseapp.com",
-  projectId: "fir-api-a3355",
-  storageBucket: "fir-api-a3355.appspot.com",
-  messagingSenderId: "1011386254365",
-  appId: "1:1011386254365:web:217330c56750a7f3d732f4",
+  apiKey: "AIzaSyAttg-YqQmIYsDQDbgGUCTLzwGbc5kVqPQ",
+  authDomain: "firenotifications-8e73f.firebaseapp.com",
+  projectId: "firenotifications-8e73f",
+  storageBucket: "firenotifications-8e73f.appspot.com",
+  messagingSenderId: "493872124595",
+  appId: "1:493872124595:web:a1933d80f8ae7bd29f96c6"
 };
 
 function requestPermission() {
@@ -16,18 +16,16 @@ function requestPermission() {
     if (permission === "granted") {
       console.log("Notification permission granted.");
       const app = initializeApp(firebaseConfig);
-
       const messaging = getMessaging(app);
-      getToken(messaging, {
-        vapidKey:
-          "BF6n7pDMoVrpO0d45bgYr9kZPaSt8OwE9evchUqsAJKgiEWroqFkbIwUeNJb7llfNFLuHWeBjCgt5C3AHQwB-Ro",
-      }).then((currentToken) => {
-        if (currentToken) {
-          console.log("currentToken: ", currentToken);
-        } else {
-          console.log("Can not get token");
-        }
-      });
+      const vapidKey = "BE1UdF6PA3Tl3rIm6sVLPhQftY07OS-jZ6w6O3DZbaUU3-Ei8vtlE05_Sf1m3JEM3dXXq9ZzlB9zLe-PqBDRf24"
+      getToken(messaging, { vapidKey })
+        .then((currentToken) => {
+          if (currentToken) {
+            console.log("currentToken: ", currentToken);
+          } else {
+            console.log("Could not get token");
+          }
+        });
     } else {
       console.log("Do not have permission!");
     }
