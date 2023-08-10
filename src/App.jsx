@@ -1,16 +1,11 @@
 import './App.css'
-import ComponenteAnimado from './components/ComponenteAnimado'
-import BotonTransicion from './components/BotonTransicion'
-import ComponenteCondicional from './components/ComponenteCondicional'
-import ComponenteRS from './components/ReactSpring/ComponenteRS'
-import ComponenteFM from './components/FramerMotion/ComponenteFM'
-import ComponenteLR from './components/LottieReact/ComponenteLR'
-import ComponenteSP from './components/Spline/ComponenteSP'
+import ListaNotas from './views/ListaNotas'
 
 function App() {
   return (
     <>
-      <ComponenteSP />
+      <h2>Aplicación de Notas</h2>
+      <ListaNotas />
     </>
   )
 }
