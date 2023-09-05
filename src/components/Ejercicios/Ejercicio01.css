@@ -1,0 +1,7 @@
+.boton-ejercicio-01 {
+    transition: transform 0.5s;
+}
+
+.boton-ejercicio-01:hover {
+    transform: scale(2);
+}
