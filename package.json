@@ -12,12 +12,15 @@
   "dependencies": {
     "@react-spring/web": "^9.7.3",
     "@splinetool/react-spline": "^2.2.6",
+    "@tanstack/react-query": "^4.33.0",
+    "axios": "^1.5.0",
     "framer-motion": "^10.15.1",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^4.34.1",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",

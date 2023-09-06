@@ -1,18 +1,24 @@
+import { useQuery } from "@tanstack/react-query"
+import axios from "axios"
 import './App.css'
-import ComponenteAnimado from './components/ComponenteAnimado'
-import BotonTransicion from './components/BotonTransicion'
-import ComponenteCondicional from './components/ComponenteCondicional'
-import ComponenteRS from './components/ReactSpring/ComponenteRS'
-import ComponenteFM from './components/FramerMotion/ComponenteFM'
-import ComponenteLR from './components/LottieReact/ComponenteLR'
-import ComponenteSP from './components/Spline/ComponenteSP'
-import Ejercicio01 from './components/Ejercicios/Ejercicio01'
-import Ejercicio02 from './components/Ejercicios/Ejercicio02'
+
+const url = "https://pokeapi.co/api/v2/pokemon/charmander"
 
 function App() {
+  const { isLoading, isError, error, data, status } = useQuery({
+    queryKey: ['pokemon'],
+    queryFn: () => {
+      return axios.get(url)
+    }
+  })
+
+  if (isLoading) return <h3>Loading...</h3>
+  if (isError) return <h3>Error! {error.message}</h3>
+
+  console.log(data)
   return (
     <>
-      <Ejercicio02 />
+      Nombre del pokemon: {data.data.name}
     </>
   )
 }
