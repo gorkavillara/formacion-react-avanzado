@@ -20,4 +20,4 @@ Card.propTypes = {
     colorTexto: PropTypes.string
 }
 
-export default Card
+export default Card 
