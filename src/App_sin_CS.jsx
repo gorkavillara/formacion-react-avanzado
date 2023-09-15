@@ -1,17 +1,11 @@
-import { lazy, Suspense, useState } from "react"
+import MiVista from "./views/MiVista"
 import "./App.css"
-
-const MiVista = lazy(() => import("./views/MiVista"))
+import { useState } from "react"
 
 function App() {
     const [muestraVista, setMuestraVista] = useState(false)
 
-    if (muestraVista)
-        return (
-            <Suspense fallback={<h3>Loading...</h3>}>
-                <MiVista />
-            </Suspense>
-        )
+    if (muestraVista) return <MiVista />
     return (
         <div>
             <h2>Cargando...</h2>
