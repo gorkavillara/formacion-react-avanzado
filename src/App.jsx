@@ -1,23 +1,30 @@
-import { lazy, Suspense, useState } from "react"
+// import { suma } from "./assets/functions"
 import "./App.css"
 
-const MiVista = lazy(() => import("./views/MiVista"))
-
 function App() {
-    const [muestraVista, setMuestraVista] = useState(false)
-
-    if (muestraVista)
-        return (
-            <Suspense fallback={<h3>Loading...</h3>}>
-                <MiVista />
-            </Suspense>
-        )
     return (
-        <div>
-            <h2>Cargando...</h2>
-            <button onClick={() => setMuestraVista(true)}>Mostrar vista</button>
-        </div>
+        <button
+            onClick={() => {
+                import("./assets/functions").then((functions) =>
+                    alert(functions.suma(2, 3))
+                )
+            }}
+        >
+            Haz clic
+        </button>
     )
 }
+// function App() {
+//     return (
+//         <button
+//             onClick={async () => {
+//                 const { suma } = await import("./assets/functions")
+//                 alert(suma(2, 3))
+//             }}
+//         >
+//             Haz clic
+//         </button>
+//     )
+// }
 
 export default App
