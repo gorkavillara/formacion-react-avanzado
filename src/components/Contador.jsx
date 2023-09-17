@@ -1,4 +1,5 @@
 import { useState } from "react"
+import DisplayContador from "./DisplayContador"
 
 const Contador = () => {
     const [contador, setContador] = useState(0)
@@ -10,7 +11,7 @@ const Contador = () => {
 
     return (
         <div>
-            <h3>Contador: {contador}</h3>
+            <DisplayContador contador={contador} />
             <button onClick={decrementa}>Menos</button>
             <button onClick={incrementa}>Más</button>
         </div>

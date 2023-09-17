@@ -1,9 +1,11 @@
 // import { useState } from "react"
 import { signal } from "@preact/signals-react"
+import DisplayContadorSignal from "./DisplayContadorSignal"
+
+export const contador = signal(0)
 
 const ContadorSignals = () => {
     // const [contador, setContador] = useState(0)
-    const contador = signal(0)
 
     console.log("Renderizando Contador")
 
@@ -14,7 +16,7 @@ const ContadorSignals = () => {
 
     return (
         <div>
-            <h3>Contador: {contador}</h3>
+            <DisplayContadorSignal />
             <button onClick={decrementa}>Menos</button>
             <button onClick={incrementa}>Más</button>
         </div>
