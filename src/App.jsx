@@ -5,7 +5,7 @@ const App = () => {
     return (
         <div style={{ display: "grid", placeItems: "center" }}>
             <Boton label="Click" />
-        </div>
+        </div> 
     )
 }
 
