@@ -1,9 +1,8 @@
-import { useState, useTransition } from "react"
+import { useState } from "react"
 import Lista from "./components/Lista"
 import "./App.css"
 
 function App() {
-    const [isPending, startTransition] = useTransition()
     const [contador, setContador] = useState(0)
     const [mostrarLista, setMostrarLista] = useState(false)
     return (
@@ -11,11 +10,7 @@ function App() {
             <button onClick={() => setContador((prev) => prev + 1)}>
                 {contador}
             </button>
-            <button
-                onClick={() =>
-                    startTransition(() => setMostrarLista((prev) => !prev))
-                }
-            >
+            <button onClick={() => setMostrarLista((prev) => !prev)}>
                 {mostrarLista ? "Ocultar" : "Mostrar"} lista
             </button>
             {mostrarLista && <Lista />}
