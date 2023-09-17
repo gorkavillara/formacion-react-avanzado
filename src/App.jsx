@@ -1,15 +1,9 @@
-import { useState } from "react"
-import Lista from "./components/Lista"
 import "./App.css"
+import Contador from "./components/Contador"
+import ContadorSignals from "./components/ContadorSignals"
 
 function App() {
-    const [input, setInput] = useState("")
-    return (
-        <div>
-            <input type="text" onChange={e => setInput(e.target.value)} />
-            <Lista input={input} />
-        </div>
-    )
+    return <ContadorSignals />
 }
 
 export default App
