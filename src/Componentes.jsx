@@ -11,7 +11,7 @@ function Componentes() {
             }}
         >
             <h1>Vista creada en React</h1>
-            <PlasmicComponent component="Mi Componente" />
+            <PlasmicComponent component="MiInput" />
         </div>
     )
 }

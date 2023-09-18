@@ -10,7 +10,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Router>
             <Routes>
                 <Route path="/" element={<CatchAllPage />} />
-                <Route path="/contacto" element={<CatchAllPage />} />
+                <Route path="/contact" element={<CatchAllPage />} />
+                <Route path="/faqs" element={<CatchAllPage />} />
+                <Route path="/pricing" element={<CatchAllPage />} />
                 <Route path="/componentes" element={<Componentes />} />
             </Routes>
         </Router>
