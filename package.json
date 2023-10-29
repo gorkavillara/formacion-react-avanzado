@@ -1,10 +1,10 @@
 {
-  "name": "proyecto-parcel",
+  "name": "proyecto-esbuild",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html"
+    "build": "esbuild src/index.js --bundle --outfile=dist/index.js --loader:.js=jsx --format=cjs",
+    "dev": "esbuild src/index.js --bundle --outfile=dist/index.js --loader:.js=jsx --format=cjs --watch --servedir=dist"
   },
   "author": "",
   "license": "ISC",
