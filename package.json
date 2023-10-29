@@ -1,9 +1,7 @@
 {
-  "name": "proyecto-rollup",
+  "name": "proyecto-parcel",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.js",
-  "main": "public/bundle.js",
   "scripts": {
     "build": "parcel build src/index.html",
     "dev": "parcel src/index.html"
