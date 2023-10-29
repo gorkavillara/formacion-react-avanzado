@@ -6,7 +6,7 @@
 132C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\transformer-babel\node_modules\semver\functions\satisfies.js133430622588245737 0
 84C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\csso\cjs\version.cjs133430622588511319 0
 95C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\source-map\lib\binary-search.js133430622586000426 0
-63C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\package.json133430643625216146 0
+63C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\package.json133430648077561430 0
 97C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\entities\lib\encode-trie.d.ts.map133430622586908765 0
 98C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\lines-and-columns\build\index.d.ts133430622585541203 0
 94C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\compressor-raw\LICENSE133430622616061962 0
@@ -16,7 +16,7 @@
 97C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\weak-lru-cache\tests\benchmark.js133430622584970440 0
 78C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\csso\lib\clean133430622590064709 1
 88C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\abortcontroller-polyfill133430622588864053 1
-55C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\dist133430643632781950 1
+55C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\dist133430648083546959 1
 91C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\fs\src\OverlayFS.js133430622622438560 0
 90C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\css-tree\lib\syntax\pseudo133430622591383585 1
 113C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\Makefile133430622587725982 0
@@ -802,7 +802,7 @@
 118C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\csso\node_modules\css-tree\cjs\syntax\function\var.cjs133430622617802335 0
 87C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\react-error-overlay\lib133430622585672857 1
 95C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\caniuse-lite\data\regions\KN.js133430601745849002 0
-73C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\dist\index.975ef6c8.js133430643632693436 0
+73C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\dist\index.975ef6c8.js133430648083470001 0
 89C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\type-fest\ts41\index.d.ts133430622586831802 0
 114C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\csso\node_modules\css-tree\cjs\syntax\node\CDO.cjs133430622617036852 0
 108C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\caniuse-lite\data\features\css-line-clamp.js133430601744102314 0
@@ -1356,7 +1356,7 @@
 116C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\codeframe\node_modules\ansi-styles\readme.md133430622585235279 0
 94C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\config-default\LICENSE133430622625163824 0
 97C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\react\cjs\react.production.min.js133430561268976580 0
-77C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\dist\index.975ef6c8.js.map133430643632776674 0
+77C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\dist\index.975ef6c8.js.map133430648083536944 0
 81C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\scheduler\LICENSE133430561268779568 0
 80C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\argparse\LICENSE133430622584474702 0
 126C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\cleanupIDs.js133430622586378173 0
@@ -6149,7 +6149,7 @@
 146C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeAttributesBySelector.js133430622588486079 0
 131C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeAttrs.js133430622588531338 0
 134C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeComments.js133430622588573358 0
-66C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\dist\index.html133430643632381490 0
+66C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\dist\index.html133430648083281120 0
 130C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeDesc.js133430622588624419 0
 136C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeDimensions.js133430622588665210 0
 139C:\Users\gorka\Desktop\JS\01_React\proyecto-rollup\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeEditorsNSData.js133430622588746112 0
