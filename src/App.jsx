@@ -1,14 +1,12 @@
 import "./App.css"
-import { useState } from "react"
-import { ChangeName } from "./components/ChangeName"
+import { BlogPost } from "./components/BlogPost"
 
 function App() {
-    const [name, setName] = useState("Gorka Villar")
     return (
         <div
             style={{ height: "100vh", display: "grid", placeContent: "center" }}
         >
-            <ChangeName currentName={name} onUpdateName={setName} />
+            <BlogPost post={{ title: "título del post", keywords: "formación react 19 avanzado" }} />
         </div>
     )
 }
