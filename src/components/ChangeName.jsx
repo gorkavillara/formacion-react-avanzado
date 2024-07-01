@@ -8,7 +8,7 @@ async function updateName(newName) {
     })
 }
 
-export function ChangeName({ currentName, onUpdateName }) {
+export const ChangeName = ({ currentName, onUpdateName }) => {
     const [optimisticName, setOptimisticName] = useOptimistic(currentName)
 
     const submitAction = async (formData) => {
