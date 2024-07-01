@@ -1,13 +1,14 @@
 import "./App.css"
+import { useState } from "react"
+import { ChangeName } from "./components/ChangeName"
 
 function App() {
-    const data = { name: "John Doe" }
-
+    const [name, setName] = useState("Gorka Villar")
     return (
         <div
             style={{ height: "100vh", display: "grid", placeContent: "center" }}
         >
-            <custom-element data={JSON.stringify(data)}></custom-element>
+            <ChangeName currentName={name} onUpdateName={setName} />
         </div>
     )
 }
