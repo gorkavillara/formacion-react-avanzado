@@ -15,6 +15,8 @@ const Form_con_uT = () => {
     }
     return (
         <form action={formAction}>
+            <span>Formulario con useTransition</span>
+            <br />
             <input type="text" name="nombre" disabled={isPending} />
             <button type="submit" disabled={isPending}>
                 {isPending ? "Enviando" : "Enviar"}
