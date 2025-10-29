@@ -1,4 +1,5 @@
-import { gql, useQuery } from "@apollo/client"
+import { useQuery } from "@apollo/client/react"
+import { gql } from "@apollo/client"
 import "./App.css"
 
 const GET_RICK = gql`
