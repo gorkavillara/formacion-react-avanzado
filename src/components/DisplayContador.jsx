@@ -1,6 +1,6 @@
 import { contador } from "./ContadorSignals"
 
-const DisplayContador = () => { // eslint-disable-line
+const DisplayContador = () => {
     return <h3>Contador: {contador}</h3>
 }
 
